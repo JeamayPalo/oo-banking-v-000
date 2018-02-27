@@ -18,7 +18,11 @@ class BankAccount
   end
 
   def valid?
-    
+    @broke = self.new(name)
+    @closed = self.new(name)
+    if @broke.balance = 0 || @closed.status = "closed"
+      return false
+    else true 
   end
 
   describe '#valid?' do
